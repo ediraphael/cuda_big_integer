@@ -42,8 +42,9 @@ int main(int argc, char *argv[]) {
 	resultat.valeur = (char*)malloc((resultat.taille)*sizeof(char));
 	resultat.est_positif = true;
 	initialiser_biginteger(resultat.valeur,resultat.taille);
-	
-	cout << resultat.valeur << endl;
+
+	//cout << sizeof(resultat) << endl;
+	//cout << resultat.valeur << endl;
 	test_add(bigInteger1.valeur,bigInteger1.taille,bigInteger2.valeur,bigInteger2.taille,resultat.valeur);
 	cout << " " << bigInteger1.valeur << endl;
 	cout << " " << bigInteger2.valeur << endl;
